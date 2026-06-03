@@ -9,9 +9,7 @@ import Script from "next/script";
 export const metadata = {
   metadataBase: new URL("https://howtocontact.live"),
 
-  verification: {
-    google: "vN8S9DNzxBdD18ErJ-40I7FjJ9dxq7uYDkfPMqF9ccY",
-  },
+
 
   other: {
     'citylocalpro-verification': '224889pG3oJ1XGeLKxeJg2',
