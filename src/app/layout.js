@@ -13,6 +13,10 @@ export const metadata = {
     google: "vN8S9DNzxBdD18ErJ-40I7FjJ9dxq7uYDkfPMqF9ccY",
   },
 
+  other: {
+    'citylocalpro-verification': '224889pG3oJ1XGeLKxeJg2',
+  },
+
   robots: {
     index: true,
     follow: true,
@@ -41,12 +45,12 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body>
-        <Banner/>
+        <Banner />
         <Navbar />
         {children}
-        <WhatsAppButton/>
-        <ScrollToTop/>
-        <Footer/>
+        <WhatsAppButton />
+        <ScrollToTop />
+        <Footer />
       </body>
     </html>
   );
