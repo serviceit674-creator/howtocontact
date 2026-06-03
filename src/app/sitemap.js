@@ -1,4 +1,4 @@
-const BASE_URL = "https://howtocontact.live";
+const BASE_URL = "https://www.howtocontact.live";
 
 export default async function sitemap() {
   const staticRoutes = [
