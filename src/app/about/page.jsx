@@ -10,7 +10,7 @@ title: "How to Contact Live Support | About Us Guide",
     "How to contact live support quickly and discover more about our team, services, commitment to customer assistance, and expert solutions.",
 
   alternates: {
-    canonical: "https://howtocontact.live/about",
+    canonical: "https://www.howtocontact.live/about",
   },
 
   openGraph: {

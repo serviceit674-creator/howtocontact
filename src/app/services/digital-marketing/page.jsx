@@ -12,7 +12,7 @@ export const metadata = {
     "Find expert digital marketing and IT services near you. Call 888-812-8678 for SEO, social media, web solutions, and full IT support today.",
 
   alternates: {
-    canonical: "https://howtocontact.live/services/digital-marketing",
+    canonical: "https://www.howtocontact.live/services/digital-marketing",
   },
 
   openGraph: {
@@ -21,13 +21,13 @@ export const metadata = {
     description:
       "Find expert digital marketing and IT services near you. Call 888-812-8678 for SEO, social media, web solutions, and full IT support today.",
 
-    url: "https://howtocontact.live/services/digital-marketing",
+    url: "https://www.howtocontact.live/services/digital-marketing",
 
     siteName: "How to Contact",
 
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://www.howtocontact.live/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Digital Marketing Services",
@@ -46,7 +46,7 @@ export const metadata = {
     description:
       "Find expert digital marketing and IT services near you. Call 888-812-8678 for SEO, social media, web solutions, and full IT support today.",
 
-    images: ["/og-image.jpg"],
+    images: ["https://www.howtocontact.live/og-image.jpg"],
   },
 
   robots: {

@@ -9,7 +9,7 @@ export const metadata = {
     "Reach out to our team for quick support, inquiries, or assistance. Contact us today for reliable help and prompt solutions to your questions. ",
 
   alternates: {
-    canonical: "https://howtocontact.live/contact",
+    canonical: "https://www.howtocontact.live/contact",
   },
 
   openGraph: {

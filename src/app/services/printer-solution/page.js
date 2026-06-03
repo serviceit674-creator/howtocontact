@@ -13,7 +13,7 @@ export const metadata = {
     "Reach a live agent for Printer Support Services in the USA. Call 888-812-8678 for fast, reliable help with printers, PCs, and software issues.",
 
   alternates: {
-    canonical: "https://howtocontact.live/services/printer-solution",
+    canonical: "https://www.howtocontact.live/services/printer-solution",
   },
 
   openGraph: {

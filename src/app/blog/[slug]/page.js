@@ -23,8 +23,8 @@ export async function generateMetadata({ params }) {
 
     const title = blog?.seo?.metaTitle ;
     const description = blog?.seo?.metaDescription ;
-    const canonicalUrl =  `https://howtocontact.live/blog/${blog.slug}`;
-    const imageUrl = blog?.image?.url || "https://howtocontact.live/og-image.jpg";
+    const canonicalUrl =  `https://www.howtocontact.live/blog/${blog.slug}`;
+    const imageUrl = blog?.image?.url || "https://www.howtocontact.live/og-image.jpg";
 
     return {
       title,
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }) {
 
     const defaultTitle = "How to Contact Blog";
     const defaultDesc = "Expert tech blogs on IT support and cybersecurity.";
-    const defaultImg = "https://howtocontact.live/og-image.jpg";
+    const defaultImg = "https://www.howtocontact.live/og-image.jpg";
 
     return {
       title: defaultTitle,

@@ -13,7 +13,7 @@ export const metadata = {
     "Need help fixing PC or laptop problems? Call 888-812-8678 for expert troubleshooting, performance optimization, software repairs, and IT support.",
 
   alternates: {
-    canonical: "https://howtocontact.live/services/pc-laptop-solution",
+    canonical: "https://www.howtocontact.live/services/pc-laptop-solution",
   },
 
   openGraph: {
@@ -22,13 +22,13 @@ export const metadata = {
     description:
       "Need help fixing PC or laptop problems? Call 888-812-8678 for expert troubleshooting, performance optimization, software repairs, and IT support.",
 
-    url: "https://howtocontact.live/services/pc-laptop-solution",
+    url: "https://www.howtocontact.live/services/pc-laptop-solution",
 
     siteName: "How to Contact",
 
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://www.howtocontact.live/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "PC and Laptop Repair Services",
@@ -47,7 +47,7 @@ export const metadata = {
     description:
       "Need help fixing PC or laptop problems? Call 888-812-8678 for expert troubleshooting, performance optimization, software repairs, and IT support.",
 
-    images: ["/og-image.jpg"],
+    images: ["https://www.howtocontact.live/og-image.jpg"],
   },
 
   robots: {
@@ -131,7 +131,7 @@ const PcLaptopSolution = () => {
                     {/* LEFT IMAGE */}
                     <div className="w-full lg:w-[70%] h-64 lg:h-full relative z-0">
                         <Image
-                            src="/pc-hero.webp"
+                            src="https://www.howtocontact.live/pc-hero.webp"
                             alt="Modern laptop and PC workspace"
                             fill
                             className="object-cover"

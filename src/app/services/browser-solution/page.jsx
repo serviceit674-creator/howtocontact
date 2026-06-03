@@ -14,7 +14,7 @@ export const metadata = {
     "Get fast, reliable Browser Solutions help from experts. Call 888-812-8678 for troubleshooting, software fixes, and technical support worldwide.",
 
   alternates: {
-    canonical: "https://howtocontact.live/services/browser-solution",
+    canonical: "https://www.howtocontact.live/services/browser-solution",
   },
 
   openGraph: {
@@ -23,13 +23,13 @@ export const metadata = {
     description:
       "Get fast, reliable Browser Solutions help from experts. Call 888-812-8678 for troubleshooting, software fixes, and technical support worldwide.",
 
-    url: "https://howtocontact.live/services/browser-solution",
+    url: "https://www.howtocontact.live/services/browser-solution",
 
     siteName: "How to Contact",
 
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://www.howtocontact.live/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Browser Solution Services",

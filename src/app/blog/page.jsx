@@ -9,7 +9,7 @@ export const metadata = {
     "Expert tech blogs on IT support, cybersecurity, printer help, antivirus, and PC repair guides.",
 
   alternates: {
-    canonical: "https://howtocontact.live/blog",
+    canonical: "https://www.howtocontact.live/blog",
   },
 
   openGraph: {

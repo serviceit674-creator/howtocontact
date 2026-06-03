@@ -16,7 +16,7 @@ export const metadata={
     "Contact 24/7 at 888-812-8678 for IT consulting, printer support, PC & laptop solutions, software help, browser fixes, and digital marketing.",
 
   alternates: {
-    canonical: "https://howtocontact.live",
+    canonical: "https://www.howtocontact.live",
   },
 
    openGraph: {

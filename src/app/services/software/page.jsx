@@ -13,7 +13,7 @@ export const metadata = {
     "Get expert software solutions and technical support. Call 888-812-8678 for installation help, troubleshooting, updates, and system optimization.",
 
   alternates: {
-    canonical: "https://howtocontact.live/services/software",
+    canonical: "https://www.howtocontact.live/services/software",
   },
 
   openGraph: {
