@@ -11,7 +11,9 @@ export const metadata = {
   other: {
     'citylocalpro-verification': '224889pG3oJ1XGeLKxeJg2',
   },
-
+ verification: {
+    google: "ERkZXgZqS0aJzmsWYNBu2cbn93tHErJU_0Qz8sFZrbg",
+  },
   robots: {
     index: true,
     follow: true,
