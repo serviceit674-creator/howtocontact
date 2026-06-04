@@ -12,8 +12,9 @@ export const metadata = {
     'citylocalpro-verification': '224889pG3oJ1XGeLKxeJg2',
   },
  verification: {
-    google: "vN8S9DNzxBdD18ErJ-40I7FjJ9dxq7uYDkfPMqF9ccY",
+    google: "q-QCX0ITA1eiTgb6nbTXF-4zZ--rLxSuRzU_NkZfNOI",
     // google: "ERkZXgZqS0aJzmsWYNBu2cbn93tHErJU_0Qz8sFZrbg",
+    // <meta name="google-site-verification" content="q-QCX0ITA1eiTgb6nbTXF-4zZ--rLxSuRzU_NkZfNOI" />
   },
   robots: {
     index: true,
