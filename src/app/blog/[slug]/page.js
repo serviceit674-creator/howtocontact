@@ -1,98 +1,70 @@
-import BlogDetailWrapper from "@/components/BlogDetailWrapper";
-import React from "react";
-
-export const dynamic = "force-dynamic";
+import BlogDetailsWrapper from "@/components/BlogDetailWrapper";
+import { BlogData } from "../../../api/blogapi";
+import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
+  const res = await BlogData(slug);
+  const blog = res?.blog;
 
-  try {
-    const res = await fetch(
-      `https://a-backend-phi.vercel.app/api/blogs/slug/${slug}`
-    );
-
-    if (!res.ok) throw new Error(`API responded with status: ${res.status}`);
-
-    const data = await res.json();
-    const blog = data.blog;
-    // console.log(data);
-
-    if (!blog) {
-      return { title: "Blog Not Found | How to Contact" };
-    }
-
-    const title = blog?.seo?.metaTitle ;
-    const description = blog?.seo?.metaDescription ;
-    const canonicalUrl =  `https://www.howtocontact.live/blog/${blog.slug}`;
-    const imageUrl = blog?.image?.url || "https://www.howtocontact.live/og-image.jpg";
-
+  if (!blog) {
     return {
-      title,
-      description,
-      alternates: { canonical: canonicalUrl },
-      openGraph: {
-        title,
-        description,
-        url: canonicalUrl,
-        siteName: "How to Contact",
-        images: [{ url: imageUrl, width: 1200, height: 630, alt: title }],
-        locale: "en_US",
-        type: "article",
-      },
-      twitter: {
-        card: "summary_large_image",
-        title,
-        description,
-        images: [imageUrl],
-      },
-      robots: { index: true, follow: true },
-    };
-  } catch (error) {
-    // AB YEH ERROR AAPKO RUNTIME LOGS MEIN PAKKA DIKHEGA
-    console.error("Metadata Fetch Error for slug:", slug, error);
-
-    const defaultTitle = "How to Contact Blog";
-    const defaultDesc = "Expert tech blogs on IT support and cybersecurity.";
-    const defaultImg = "https://www.howtocontact.live/og-image.jpg";
-
-    return {
-      title: defaultTitle,
-      description: defaultDesc,
-      openGraph: {
-        title: defaultTitle,
-        description: defaultDesc,
-        images: [{ url: defaultImg, width: 1200, height: 630 }],
-      },
-      twitter: {
-        card: "summary_large_image",
-        title: defaultTitle,
-        description: defaultDesc,
-        images: [defaultImg],
-      },
+      title: "Blog Not Found",
+      description: "The requested blog post could not be found.",
     };
   }
+
+  const seo = blog.seo || {};
+  const baseUrl = "https://www.howtocontact.live";
+  const canonicalUrl = `${baseUrl}/blog/${slug}`;
+
+  return {
+    title: seo.metaTitle,
+    description: seo.metaDescription,
+    keywords: seo.keywords?.join(", ") || blog.tags?.join(", "),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: seo.metaTitle || blog.title,
+      description: seo.metaDescription || blog.excerpt,
+      url: canonicalUrl,
+      type: "article",
+      images: blog.image?.url
+        ? [
+            {
+              url: blog.image.url,
+              width: 1200,
+              height: 630,
+              alt: blog.image.alt || blog.title,
+            },
+          ]
+        : [],
+      publishedTime: blog.publishedAt,
+      authors: [blog.author?.name || "HowToContact Team"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: seo.metaTitle,
+      description: seo.metaDescription,
+      images: blog.image?.url ? [blog.image.url] : [],
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
 }
 
-const Page = async ({ params }) => {
+const page = async ({ params }) => {
   const { slug } = await params;
+  const res = await BlogData(slug);
 
-  let blog = null;
-  try {
-    const res = await fetch(
-      `https://a-backend-phi.vercel.app/api/blogs/slug/${slug}`,
-      { cache: "no-store" }
-    );
-    const data = await res.json();
-    blog = data?.blog || null;
-  } catch (err) {
-    console.error("Page fetch error:", err);
+  if (!res?.blog) {
+    notFound();
   }
 
-  return (
-    <div>
-      <BlogDetailWrapper blog={blog} />
-    </div>
-  );
+  return <BlogDetailsWrapper blog={res.blog} />;
 };
 
-export default Page;
+export default page;

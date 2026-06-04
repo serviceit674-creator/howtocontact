@@ -1,14 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactCompiler: true,
-  trailingSlash: false,
   images: {
-    unoptimized: true,
-
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
         hostname: "ik.imagekit.io",
+      },
+      {
+        protocol: "https",
+        hostname: "media.istockphoto.com",
       },
     ],
   },
