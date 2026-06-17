@@ -7,20 +7,20 @@ import Footer from "@/components/Footer";
 
 
 export const metadata = {
-  title:"How to Fix PC & Laptop Issues | 888-812-8678",
+  title:"How to Fix PC & Laptop Issues | +1-800-879-0156",
 
   description:
-    "Need help fixing PC or laptop problems? Call 888-812-8678 for expert troubleshooting, performance optimization, software repairs, and IT support.",
+    "Need help fixing PC or laptop problems? Call +1-800-879-0156 for expert troubleshooting, performance optimization, software repairs, and IT support.",
 
   alternates: {
     canonical: "https://www.howtocontact.live/services/pc-laptop-solution",
   },
 
   openGraph: {
-    title:"How to Fix PC & Laptop Issues | 888-812-8678",
+    title:"How to Fix PC & Laptop Issues | +1-800-879-0156",
 
     description:
-      "Need help fixing PC or laptop problems? Call 888-812-8678 for expert troubleshooting, performance optimization, software repairs, and IT support.",
+      "Need help fixing PC or laptop problems? Call +1-800-879-0156 for expert troubleshooting, performance optimization, software repairs, and IT support.",
 
     url: "https://www.howtocontact.live/services/pc-laptop-solution",
 
@@ -42,10 +42,10 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title:"How to Fix PC & Laptop Issues | 888-812-8678",
+    title:"How to Fix PC & Laptop Issues | +1-800-879-0156",
 
     description:
-      "Need help fixing PC or laptop problems? Call 888-812-8678 for expert troubleshooting, performance optimization, software repairs, and IT support.",
+      "Need help fixing PC or laptop problems? Call +1-800-879-0156 for expert troubleshooting, performance optimization, software repairs, and IT support.",
 
     images: ["https://www.howtocontact.live/og-image.jpg"],
   },

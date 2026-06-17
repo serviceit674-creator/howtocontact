@@ -7,20 +7,20 @@ import Footer from "@/components/Footer";
 
 
 export const metadata = {
-  title: "Live Printer Support USA | Call 888-812-8678",
+  title: "Live Printer Support USA | Call +1-800-879-0156",
 
   description:
-    "Reach a live agent for Printer Support Services in the USA. Call 888-812-8678 for fast, reliable help with printers, PCs, and software issues.",
+    "Reach a live agent for Printer Support Services in the USA. Call +1-800-879-0156 for fast, reliable help with printers, PCs, and software issues.",
 
   alternates: {
     canonical: "https://www.howtocontact.live/services/printer-solution",
   },
 
   openGraph: {
-    title: "Live Printer Support USA | Call 888-812-8678",
+    title: "Live Printer Support USA | Call +1-800-879-0156",
 
     description:
-      "Reach a live agent for Printer Support Services in the USA. Call 888-812-8678 for fast, reliable help with printers, PCs, and software issues.",
+      "Reach a live agent for Printer Support Services in the USA. Call +1-800-879-0156 for fast, reliable help with printers, PCs, and software issues.",
 
     url: "https://howtocontact.live/services/printer-solution",
 
@@ -42,10 +42,10 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Live Printer Support USA | Call 888-812-8678",
+    title: "Live Printer Support USA | Call +1-800-879-0156",
 
     description:
-      "Reach a live agent for Printer Support Services in the USA. Call 888-812-8678 for fast, reliable help with printers, PCs, and software issues.",
+      "Reach a live agent for Printer Support Services in the USA. Call +1-800-879-0156 for fast, reliable help with printers, PCs, and software issues.",
 
     images: ["/og-image.jpg"],
   },

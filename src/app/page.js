@@ -13,7 +13,7 @@ export const metadata={
    title: "24/7 | Contact Global IT & Technical Help Support",
 
   description:
-    "Contact 24/7 at 888-812-8678 for IT consulting, printer support, PC & laptop solutions, software help, browser fixes, and digital marketing.",
+    "Contact 24/7 at +1-800-879-0156 for IT consulting, printer support, PC & laptop solutions, software help, browser fixes, and digital marketing.",
 
   alternates: {
     canonical: "https://www.howtocontact.live",
@@ -23,7 +23,7 @@ export const metadata={
   title: "24/7 | Contact Global IT & Technical Help Support",
 
     description:
-      "Contact 24/7 at 888-812-8678 for IT consulting, printer support, PC & laptop solutions, software help, browser fixes, and digital marketing.",
+      "Contact 24/7 at +1-800-879-0156 for IT consulting, printer support, PC & laptop solutions, software help, browser fixes, and digital marketing.",
 
     url: "https://howtocontact.live",
 
@@ -48,7 +48,7 @@ export const metadata={
   title: "24/7 | Contact Global IT & Technical Help Support",
 
     description:
-      "Contact 24/7 at 888-812-8678 for IT consulting, printer support, PC & laptop solutions, software help, browser fixes, and digital marketing.",
+      "Contact 24/7 at +1-800-879-0156 for IT consulting, printer support, PC & laptop solutions, software help, browser fixes, and digital marketing.",
 
     images: ["/og-image.jpg"],
   },
