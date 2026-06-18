@@ -8,20 +8,20 @@ import Footer from "@/components/Footer";
 
 
 export const metadata = {
-  title:"Browser Solutions Support | Call 888-812-8678",
+  title:"Browser Solutions Support | Call +1-800-879-0156",
 
   description:
-    "Get fast, reliable Browser Solutions help from experts. Call 888-812-8678 for troubleshooting, software fixes, and technical support worldwide.",
+    "Get fast, reliable Browser Solutions help from experts. Call +1-800-879-0156 for troubleshooting, software fixes, and technical support worldwide.",
 
   alternates: {
     canonical: "https://www.howtocontact.live/services/browser-solution",
   },
 
   openGraph: {
-    title:"Browser Solutions Support | Call 888-812-8678",
+    title:"Browser Solutions Support | Call +1-800-879-0156",
 
     description:
-      "Get fast, reliable Browser Solutions help from experts. Call 888-812-8678 for troubleshooting, software fixes, and technical support worldwide.",
+      "Get fast, reliable Browser Solutions help from experts. Call +1-800-879-0156 for troubleshooting, software fixes, and technical support worldwide.",
 
     url: "https://www.howtocontact.live/services/browser-solution",
 
@@ -43,10 +43,10 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title:"Browser Solutions Support | Call 888-812-8678",
+    title:"Browser Solutions Support | Call +1-800-879-0156",
 
     description:
-      "Get fast, reliable Browser Solutions help from experts. Call 888-812-8678 for troubleshooting, software fixes, and technical support worldwide.",
+      "Get fast, reliable Browser Solutions help from experts. Call +1-800-879-0156 for troubleshooting, software fixes, and technical support worldwide.",
 
     images: ["/og-image.jpg"],
   },

@@ -7,20 +7,20 @@ import Link from "next/link";
 
 
 export const metadata = {
- title: "Software Solutions Support | Call 888-812-8678",
+ title: "Software Solutions Support | Call +1-800-879-0156",
 
   description:
-    "Get expert software solutions and technical support. Call 888-812-8678 for installation help, troubleshooting, updates, and system optimization.",
+    "Get expert software solutions and technical support. Call +1-800-879-0156 for installation help, troubleshooting, updates, and system optimization.",
 
   alternates: {
     canonical: "https://www.howtocontact.live/services/software",
   },
 
   openGraph: {
-   title: "Software Solutions Support | Call 888-812-8678",
+   title: "Software Solutions Support | Call +1-800-879-0156",
 
     description:
-      "Get expert software solutions and technical support. Call 888-812-8678 for installation help, troubleshooting, updates, and system optimization.",
+      "Get expert software solutions and technical support. Call +1-800-879-0156 for installation help, troubleshooting, updates, and system optimization.",
 
     url: "https://howtocontact.live/services/software",
 
@@ -42,10 +42,10 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-   title: "Software Solutions Support | Call 888-812-8678",
+   title: "Software Solutions Support | Call +1-800-879-0156",
 
     description:
-      "Get expert software solutions and technical support. Call 888-812-8678 for installation help, troubleshooting, updates, and system optimization.",
+      "Get expert software solutions and technical support. Call +1-800-879-0156 for installation help, troubleshooting, updates, and system optimization.",
 
     images: ["/og-image.jpg"],
   },

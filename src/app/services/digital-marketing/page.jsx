@@ -6,20 +6,20 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Digital Marketing & IT Services | 888-812-8678",
+  title: "Digital Marketing & IT Services | +1-800-879-0156",
 
   description:
-    "Find expert digital marketing and IT services near you. Call 888-812-8678 for SEO, social media, web solutions, and full IT support today.",
+    "Find expert digital marketing and IT services near you. Call +1-800-879-0156 for SEO, social media, web solutions, and full IT support today.",
 
   alternates: {
     canonical: "https://www.howtocontact.live/services/digital-marketing",
   },
 
   openGraph: {
-    title: "Digital Marketing & IT Services | 888-812-8678",
+    title: "Digital Marketing & IT Services | +1-800-879-0156",
 
     description:
-      "Find expert digital marketing and IT services near you. Call 888-812-8678 for SEO, social media, web solutions, and full IT support today.",
+      "Find expert digital marketing and IT services near you. Call +1-800-879-0156 for SEO, social media, web solutions, and full IT support today.",
 
     url: "https://www.howtocontact.live/services/digital-marketing",
 
@@ -41,10 +41,10 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Digital Marketing & IT Services | 888-812-8678",
+    title: "Digital Marketing & IT Services | +1-800-879-0156",
 
     description:
-      "Find expert digital marketing and IT services near you. Call 888-812-8678 for SEO, social media, web solutions, and full IT support today.",
+      "Find expert digital marketing and IT services near you. Call +1-800-879-0156 for SEO, social media, web solutions, and full IT support today.",
 
     images: ["https://www.howtocontact.live/og-image.jpg"],
   },
