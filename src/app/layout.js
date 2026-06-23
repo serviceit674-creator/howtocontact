@@ -10,7 +10,8 @@ import CallButton from "@/components/CallButton";
 export const metadata = {
   metadataBase: new URL("https://www.howtocontact.live"),
   other: {
-    'citylocalpro-verification': '224889pG3oJ1XGeLKxeJg2',
+    // 'citylocalpro-verification': '225894DZLo085P8HBRbkox',
+    // 'citylocalpro-verification': '224889pG3oJ1XGeLKxeJg2',
   },
  verification: {
     google: "q-QCX0ITA1eiTgb6nbTXF-4zZ--rLxSuRzU_NkZfNOI",
