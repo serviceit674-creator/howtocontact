@@ -40,13 +40,15 @@ export default function ProductSlider() {
   };
 
   // AUTO SLIDE
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 3000);
+useEffect(() => {
+  const interval = setInterval(() => {
+    setIndex((prev) =>
+      prev === products.length - 1 ? 0 : prev + 1
+    );
+  }, 3000);
 
-    return () => clearInterval(interval);
-  }, [index]);
+  return () => clearInterval(interval);
+}, []);
 
   return (
     <div className="relative mx-auto w-full max-w-[320px] md:max-w-[300px]">
@@ -92,6 +94,7 @@ export default function ProductSlider() {
                   src={product.image}
                   alt={product.title}
                   fill
+                  sizes="300px"
                   className="object-contain"
                 />
               </div>

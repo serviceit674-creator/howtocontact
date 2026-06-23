@@ -29,8 +29,8 @@ const Hero = () => {
                                 alt="Global IT Consulting and Tech Support Services"
                                 fill
                                 priority
-                                quality={75}
-                                sizes="100vw"
+                                quality={70}
+                                sizes="(max-width: 768px) 100vw, 50vw"
                                 className="object-cover"
                             />
                         </div>                     <div className="absolute inset-0 bg-gradient-to-t from-[#071405]/90 via-[#071405]/35 to-transparent" />
@@ -116,7 +116,7 @@ const Hero = () => {
                             </Link>
                         </div>
 
-                        <div className="mt-10 grid grid-cols-3 divide-x divide-[#CFE5C9] rounded-2xl border border-[#DDEED8] bg-white/80 p-5 shadow-sm backdrop-blur">
+                        <div className="mt-10 grid grid-cols-3 divide-x divide-[#CFE5C9] rounded-2xl border border-[#DDEED8] bg-white/80 p-5 shadow-sm backdrop-blur-sm">
                             {stats.map((stat) => (
                                 <div key={stat.label} className="px-3 text-center">
                                     <p className="text-2xl font-black text-[#193315]">

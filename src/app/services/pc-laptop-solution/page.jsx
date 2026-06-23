@@ -131,7 +131,7 @@ const PcLaptopSolution = () => {
                     {/* LEFT IMAGE */}
                     <div className="w-full lg:w-[70%] h-64 lg:h-full relative z-0">
                         <Image
-                            src="https://www.howtocontact.live/pc-hero.webp"
+                            src="/Laptop4.webp"
                             alt="Modern laptop and PC workspace"
                             fill
                             className="object-cover"
