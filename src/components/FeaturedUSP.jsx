@@ -1,28 +1,28 @@
 const FeaturedUSP = () => {
   const uspData = [
     {
-      img: "/featured1.png",
+      img: "/featured1.webp",
       alt: "System optimization and performance tuning service",
       titleMain: "Complete",
       titleSub: "Optimization",
       desc: "Full and complete system optimisation services are available.",
     },
     {
-      img: "/featured2.png",
+      img: "/featured2.webp",
       alt: "Device diagnosis and hardware repair assistance",
       titleMain: "Diagnosis",
       titleSub: "& Repair",
       desc: "We offer a free diagnostic to determine the services your device.",
     },
     {
-      img: "/featured3.png",
+      img: "/featured3.webp",
       alt: "Software setup and secure installation services",
       titleMain: "Setup",
       titleSub: "& Install",
       desc: "We can manage your security services and you can trust us.",
     },
     {
-      img: "/featured4.png",
+      img: "/featured4.webp",
       alt: "Malware and virus removal for PC and laptops",
       titleMain: "Virus",
       titleSub: "Removal",

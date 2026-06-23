@@ -193,10 +193,11 @@ const OurShop = () => {
 
                                     {/* ICON */}
                                     <div className="w-16 h-16 p-3 border rounded-full border-[#348d27] flex items-center justify-center shrink-0">
-                                        <img
-                                            src="/icon2.png"
+                                        <Image
+                                            src="/icon2.webp"
                                             alt={card.title}
-                                            className="w-full h-full object-contain"
+                                            width={40}
+                                            height={40}
                                         />
                                     </div>
 

@@ -56,6 +56,7 @@ useEffect(() => {
       {/* LEFT BUTTON */}
       <button
         onClick={prevSlide}
+        aria-label="Previous slide"
         className="absolute left-[-20px] top-1/2 -translate-y-1/2 bg-[#5DA452] p-2 rounded-full hover:bg-[#193315] z-20 hidden md:flex"
       >
         <ChevronLeft size={18} className="text-white" />
@@ -64,6 +65,7 @@ useEffect(() => {
       {/* RIGHT BUTTON */}
       <button
         onClick={nextSlide}
+        aria-label="Next slide"
         className="absolute right-[-20px] top-1/2 -translate-y-1/2 bg-[#5DA452] p-2 rounded-full hover:bg-[#193315] z-20 hidden md:flex"
       >
         <ChevronRight size={18} className="text-white" />

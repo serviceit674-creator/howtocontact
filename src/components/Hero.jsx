@@ -23,7 +23,7 @@ const Hero = () => {
                     <div className=" absolute -left-6 top-10 hidden h-40 w-40 rounded-full bg-[#76CE68]/20 blur-2xl lg:block" />
 
                     <div className=" relative h-[420px] sm:h-[540px] lg:h-[620px] overflow-hidden rounded-[32px] bg-[#193315] shadow-xl">
-                        <div className="relative h-[600px]">
+                        <div className="relative h-[620px]">
                             <Image
                                 src="/Banner1.webp"
                                 alt="Global IT Consulting and Tech Support Services"
