@@ -13,7 +13,7 @@ export const metadata = {
     // 'citylocalpro-verification': '225894DZLo085P8HBRbkox',
     // 'citylocalpro-verification': '224889pG3oJ1XGeLKxeJg2',
   },
- verification: {
+  verification: {
     google: "q-QCX0ITA1eiTgb6nbTXF-4zZ--rLxSuRzU_NkZfNOI",
     // google: "ERkZXgZqS0aJzmsWYNBu2cbn93tHErJU_0Qz8sFZrbg",
     // <meta name="google-site-verification" content="q-QCX0ITA1eiTgb6nbTXF-4zZ--rLxSuRzU_NkZfNOI" />
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
       <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-LXGNCN97KX"
-           strategy="lazyOnload"
+          strategy="lazyOnload"
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
@@ -48,9 +48,11 @@ export default function RootLayout({ children }) {
       <body>
         <Banner />
         <Navbar />
-        {children}
+        <main id="main-content">
+          {children}
+        </main>
         <WhatsAppButton />
-        <CallButton/>
+        <CallButton />
         <ScrollToTop />
         <Footer />
       </body>

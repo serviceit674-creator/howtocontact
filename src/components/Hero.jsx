@@ -61,7 +61,7 @@ const Hero = () => {
                                 <p className="text-xl font-black leading-none text-[#193315]">
                                     100%
                                 </p>
-                                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-gray-500">
+                                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-gray-700">
                                     Satisfaction
                                 </p>
                             </div>
@@ -122,7 +122,7 @@ const Hero = () => {
                                     <p className="text-2xl font-black text-[#193315]">
                                         {stat.value}
                                     </p>
-                                    <p className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-gray-500">
+                                    <p className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-gray-700">
                                         {stat.label}
                                     </p>
                                 </div>
