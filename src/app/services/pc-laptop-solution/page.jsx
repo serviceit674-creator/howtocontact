@@ -7,53 +7,53 @@ import Footer from "@/components/Footer";
 
 
 export const metadata = {
-  title:"How to Fix PC & Laptop Issues | +1-800-879-0156",
-
-  description:
-    "Need help fixing PC or laptop problems? Call +1-800-879-0156 for expert troubleshooting, performance optimization, software repairs, and IT support.",
-
-  alternates: {
-    canonical: "https://www.howtocontact.live/services/pc-laptop-solution",
-  },
-
-  openGraph: {
-    title:"How to Fix PC & Laptop Issues | +1-800-879-0156",
+    title: "How to Fix PC & Laptop Issues | +1-800-879-0156",
 
     description:
-      "Need help fixing PC or laptop problems? Call +1-800-879-0156 for expert troubleshooting, performance optimization, software repairs, and IT support.",
+        "Need help fixing PC or laptop problems? Call +1-800-879-0156 for expert troubleshooting, performance optimization, software repairs, and IT support.",
 
-    url: "https://www.howtocontact.live/services/pc-laptop-solution",
+    alternates: {
+        canonical: "https://www.howtocontact.live/services/pc-laptop-solution",
+    },
 
-    siteName: "How to Contact",
+    openGraph: {
+        title: "How to Fix PC & Laptop Issues | +1-800-879-0156",
 
-    images: [
-      {
-        url: "https://www.howtocontact.live/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "PC and Laptop Repair Services",
-      },
-    ],
+        description:
+            "Need help fixing PC or laptop problems? Call +1-800-879-0156 for expert troubleshooting, performance optimization, software repairs, and IT support.",
 
-    locale: "en_US",
-    type: "website",
-  },
+        url: "https://www.howtocontact.live/services/pc-laptop-solution",
 
-  twitter: {
-    card: "summary_large_image",
+        siteName: "How to Contact",
 
-    title:"How to Fix PC & Laptop Issues | +1-800-879-0156",
+        images: [
+            {
+                url: "https://www.howtocontact.live/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "PC and Laptop Repair Services",
+            },
+        ],
 
-    description:
-      "Need help fixing PC or laptop problems? Call +1-800-879-0156 for expert troubleshooting, performance optimization, software repairs, and IT support.",
+        locale: "en_US",
+        type: "website",
+    },
 
-    images: ["https://www.howtocontact.live/og-image.jpg"],
-  },
+    twitter: {
+        card: "summary_large_image",
 
-  robots: {
-    index: true,
-    follow: true,
-  },
+        title: "How to Fix PC & Laptop Issues | +1-800-879-0156",
+
+        description:
+            "Need help fixing PC or laptop problems? Call +1-800-879-0156 for expert troubleshooting, performance optimization, software repairs, and IT support.",
+
+        images: ["https://www.howtocontact.live/og-image.jpg"],
+    },
+
+    robots: {
+        index: true,
+        follow: true,
+    },
 };
 
 const PcLaptopSolution = () => {

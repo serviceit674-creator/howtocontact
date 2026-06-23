@@ -5,6 +5,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Banner from "@/components/Banner";
 import WhatsAppButton from "@/components/WhatsAppButton ";
 import Script from "next/script";
+import CallButton from "@/components/CallButton";
 
 export const metadata = {
   metadataBase: new URL("https://www.howtocontact.live"),
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <WhatsAppButton />
+        <CallButton/>
         <ScrollToTop />
         <Footer />
       </body>

@@ -6,53 +6,53 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Digital Marketing & IT Services | +1-800-879-0156",
-
-  description:
-    "Find expert digital marketing and IT services near you. Call +1-800-879-0156 for SEO, social media, web solutions, and full IT support today.",
-
-  alternates: {
-    canonical: "https://www.howtocontact.live/services/digital-marketing",
-  },
-
-  openGraph: {
     title: "Digital Marketing & IT Services | +1-800-879-0156",
 
     description:
-      "Find expert digital marketing and IT services near you. Call +1-800-879-0156 for SEO, social media, web solutions, and full IT support today.",
+        "Find expert digital marketing and IT services near you. Call +1-800-879-0156 for SEO, social media, web solutions, and full IT support today.",
 
-    url: "https://www.howtocontact.live/services/digital-marketing",
+    alternates: {
+        canonical: "https://www.howtocontact.live/services/digital-marketing",
+    },
 
-    siteName: "How to Contact",
+    openGraph: {
+        title: "Digital Marketing & IT Services | +1-800-879-0156",
 
-    images: [
-      {
-        url: "https://www.howtocontact.live/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Digital Marketing Services",
-      },
-    ],
+        description:
+            "Find expert digital marketing and IT services near you. Call +1-800-879-0156 for SEO, social media, web solutions, and full IT support today.",
 
-    locale: "en_US",
-    type: "website",
-  },
+        url: "https://www.howtocontact.live/services/digital-marketing",
 
-  twitter: {
-    card: "summary_large_image",
+        siteName: "How to Contact",
 
-    title: "Digital Marketing & IT Services | +1-800-879-0156",
+        images: [
+            {
+                url: "https://www.howtocontact.live/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Digital Marketing Services",
+            },
+        ],
 
-    description:
-      "Find expert digital marketing and IT services near you. Call +1-800-879-0156 for SEO, social media, web solutions, and full IT support today.",
+        locale: "en_US",
+        type: "website",
+    },
 
-    images: ["https://www.howtocontact.live/og-image.jpg"],
-  },
+    twitter: {
+        card: "summary_large_image",
 
-  robots: {
-    index: true,
-    follow: true,
-  },
+        title: "Digital Marketing & IT Services | +1-800-879-0156",
+
+        description:
+            "Find expert digital marketing and IT services near you. Call +1-800-879-0156 for SEO, social media, web solutions, and full IT support today.",
+
+        images: ["https://www.howtocontact.live/og-image.jpg"],
+    },
+
+    robots: {
+        index: true,
+        follow: true,
+    },
 };
 
 const DigitalMarketing = () => {
@@ -306,15 +306,15 @@ const DigitalMarketing = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-[#193315] to-[#193315]" />
 
                         {/* RIGHT IMAGE */}
-                          <div className="absolute right-0 top-0 h-full w-[45%] md:w-[40%] flex items-center justify-center">
-                                                   <Image
-                                                       src="/Contact.webp"
-                                                       alt="Get 24/7 remote software support from certified technicians"
-                                                       width={350}
-                                                       height={350}
-                                                       className="h-[85%] w-auto object-contain rounded-full"
-                                                   />
-                                               </div>
+                        <div className="absolute right-0 top-0 h-full w-[45%] md:w-[40%] flex items-center justify-center">
+                            <Image
+                                src="/Contact.webp"
+                                alt="Get 24/7 remote software support from certified technicians"
+                                width={350}
+                                height={350}
+                                className="h-[85%] w-auto object-contain rounded-full"
+                            />
+                        </div>
 
                         {/* LEFT CONTENT */}
                         <div className="absolute left-0 top-0 h-full w-[85%] md:w-[65%] lg:w-[58%] bg-[#9FF791] rounded-r-[180px] md:rounded-r-[220px] flex items-center shadow-sm z-10">
