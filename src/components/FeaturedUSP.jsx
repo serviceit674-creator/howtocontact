@@ -1,3 +1,5 @@
+
+import Image from "next/image";
 const FeaturedUSP = () => {
   const uspData = [
     {
@@ -45,9 +47,11 @@ const FeaturedUSP = () => {
               <div className="h-full px-6 py-10 text-center hover:bg-[#F8FBF7] transition duration-300">
                 {/* ICON */}
                 <div className="flex justify-center mb-5">
-                  <img
+                  <Image
                     src={item.img}
                     alt={item.alt}
+                    width={64}
+                    height={64}
                     className="h-16 w-auto object-contain"
                   />
                 </div>

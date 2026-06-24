@@ -196,9 +196,9 @@ const Footer = () => {
               {/* POPULAR SERVICES */}
               <div className="flex flex-col">
 
-                <h4 className="relative mb-7 inline-block pb-3 text-xl font-semibold text-[#071405] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-14 after:bg-[#2E5628]">
+                <h3 className="relative mb-7 inline-block pb-3 text-xl font-semibold text-[#071405] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-14 after:bg-[#2E5628]">
                   Popular Services
-                </h4>
+                </h3>
 
                 <ul className="space-y-4 text-[15px] text-gray-700">
                   {[
