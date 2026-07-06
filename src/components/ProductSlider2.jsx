@@ -42,11 +42,13 @@ export default function ProductSlider2() {
   // AUTO SLIDE
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide();
+      setIndex((prev) =>
+        prev === products.length - 1 ? 0 : prev + 1
+      );
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [index]);
+  }, []);
 
   return (
     <div className="relative mx-auto w-full max-w-[320px] md:max-w-[300px]">
@@ -54,14 +56,17 @@ export default function ProductSlider2() {
       {/* LEFT BUTTON */}
       <button
         onClick={prevSlide}
+        aria-label="Previous Slide"
+        title="Previous Slide"
         className="absolute left-[-20px] top-1/2 -translate-y-1/2 bg-[#5DA452] p-2 rounded-full hover:bg-[#193315] z-20 hidden md:flex"
       >
         <ChevronLeft size={18} className="text-white" />
       </button>
 
-      {/* RIGHT BUTTON */}
       <button
         onClick={nextSlide}
+        aria-label="Next Slide"
+        title="Next Slide"
         className="absolute right-[-20px] top-1/2 -translate-y-1/2 bg-[#5DA452] p-2 rounded-full hover:bg-[#193315] z-20 hidden md:flex"
       >
         <ChevronRight size={18} className="text-white" />
@@ -92,6 +97,7 @@ export default function ProductSlider2() {
                   src={product.image}
                   alt={product.title}
                   fill
+                  sizes="300px"
                   className="object-contain"
                 />
               </div>

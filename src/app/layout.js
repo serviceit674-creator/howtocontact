@@ -5,6 +5,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Banner from "@/components/Banner";
 import WhatsAppButton from "@/components/WhatsAppButton ";
 import Script from "next/script";
+import CallButton from "@/components/CallButton";
 
 export const metadata = {
   metadataBase: new URL("https://www.howtocontact.live"),
@@ -34,7 +35,7 @@ export default function RootLayout({ children }) {
       <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-LXGNCN97KX"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
@@ -48,8 +49,11 @@ export default function RootLayout({ children }) {
       <body>
         <Banner />
         <Navbar />
-        {children}
+        <main id="main-content">
+          {children}
+        </main>
         <WhatsAppButton />
+        <CallButton />
         <ScrollToTop />
         <Footer />
       </body>

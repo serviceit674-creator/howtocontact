@@ -7,34 +7,32 @@ import {
   FiMessageSquare,
 } from "react-icons/fi";
 
-import emailjs from "@emailjs/browser";
+
 
 export default function VideoContactSection() {
-  const sendEmail = (e) => {
-    e.preventDefault();
+const sendEmail = async (e) => {
+  e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_5n72u1i",
-        "template_102fpjv",
-        e.target,
-        "bfED1bbzcLms9zkik"
-      )
-      .then(() => {
-        alert("Message sent successfully!");
-        e.target.reset();
-      })
-      .catch((error) => {
-        alert("Failed to send message");
-        console.error(error);
-      });
-  };
+  const emailjs = (await import("@emailjs/browser")).default;
+
+  emailjs
+    .sendForm(
+      "service_5n72u1i",
+      "template_102fpjv",
+      e.target,
+      "bfED1bbzcLms9zkik"
+    )
+    .then(() => {
+      alert("Message sent successfully!");
+      e.target.reset();
+    });
+};
 
   return (
     <section
       className="relative bg-[#2E5628] py-16 md:py-20 overflow-hidden bg-cover bg-no-repeat"
       style={{
-        backgroundImage: "url('/footerbg3.jpg')",
+        backgroundImage: "url('/footerbg3.webp')",
         backgroundPosition: "center top",
       }}
     >

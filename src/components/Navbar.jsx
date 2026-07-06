@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { FaChevronDown } from "react-icons/fa";
+import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -14,7 +15,14 @@ const Navbar = () => {
         {/* Logo */}
         <div className="logo">
           <Link href="/" className="flex items-center gap-2">
-            <img src="/Logo.jpg" alt="logo" className="h-10 w-auto" />
+
+            <Image
+              src="/Logo.jpg"
+              alt="HowToContact Logo"
+              width={40}
+              height={40}
+              priority
+            />
 
             <span className="text-2xl sm:text-3xl text-gray-900 font-medium">
               HowToContact
@@ -47,7 +55,7 @@ const Navbar = () => {
             <li className="relative group">
               <button className="flex items-center gap-1 font-medium hover:text-[#457C3C] transition">
                 Services
-                <FaChevronDown className="text-[14px] mt-[1px]" />
+                <ChevronDown className="text-[14px] mt-[1px]" />
               </button>
 
               <ul className="absolute top-full left-0 hidden group-hover:block bg-white shadow-xl rounded-xl overflow-hidden w-64 pt-2 pb-2 z-50">
@@ -132,7 +140,7 @@ const Navbar = () => {
                 className="w-full text-left flex items-center gap-1 font-medium"
               >
                 Services
-                <FaChevronDown className="text-[14px] mt-[2px]" />
+                <ChevronDown className="text-[14px] mt-[2px]" />
               </button>
 
               {serviceOpen && (

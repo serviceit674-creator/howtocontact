@@ -28,44 +28,51 @@ const Banner = () => {
               <li>
                 <a
                   href="https://www.facebook.com/"
-                  
-                  rel="noreferrer"
+                  aria-label="Facebook"
+                  title="Facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-[#1877F2]"
                 >
-                  <FaFacebookF />
+                  <FaFacebookF aria-hidden="true" />
                 </a>
               </li>
 
               <li>
                 <a
                   href="https://x.com/"
-                 
+                  title="Twitter"
+                  target="_blank"
                   rel="noreferrer"
                   className="hover:text-[#1DA1F2]"
                 >
-                  <FaTwitter />
+                  <FaTwitter aria-hidden="true" />
                 </a>
               </li>
 
               <li>
                 <a
-                  href="#"
-              
-                  rel="noreferrer"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit our LinkedIn page"
+                  title="LinkedIn"
                   className="hover:text-[#0A66C2]"
                 >
-                  <FaLinkedinIn />
+                  <FaLinkedinIn aria-hidden="true" />
                 </a>
               </li>
 
               <li className="flex items-center gap-1 bg-red-600 px-2 py-1 rounded">
                 <a
                   href="https://www.youtube.com/"
-              
-                  rel="noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit our YouTube channel"
+                  title="YouTube"
                   className="flex items-center gap-1"
                 >
-                  <FaYoutube />
+                  <FaYoutube aria-hidden="true" />
                   <span className="text-xs font-medium">YouTube</span>
                 </a>
               </li>

@@ -23,14 +23,14 @@ const Hero = () => {
                     <div className=" absolute -left-6 top-10 hidden h-40 w-40 rounded-full bg-[#76CE68]/20 blur-2xl lg:block" />
 
                     <div className=" relative h-[420px] sm:h-[540px] lg:h-[620px] overflow-hidden rounded-[32px] bg-[#193315] shadow-xl">
-                        <div className="relative h-[600px]">
+                        <div className="relative h-[620px]">
                             <Image
                                 src="/Banner1.webp"
                                 alt="Global IT Consulting and Tech Support Services"
                                 fill
                                 priority
-                                quality={75}
-                                sizes="100vw"
+                                quality={70}
+                                sizes="(max-width: 768px) 100vw, 50vw"
                                 className="object-cover"
                             />
                         </div>                     <div className="absolute inset-0 bg-gradient-to-t from-[#071405]/90 via-[#071405]/35 to-transparent" />
@@ -61,7 +61,7 @@ const Hero = () => {
                                 <p className="text-xl font-black leading-none text-[#193315]">
                                     100%
                                 </p>
-                                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-gray-500">
+                                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-gray-700">
                                     Satisfaction
                                 </p>
                             </div>
@@ -104,7 +104,7 @@ const Hero = () => {
                                 className="inline-flex items-center justify-center gap-3 rounded-full bg-[#193315] px-6 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white shadow-lg shadow-[#193315]/20 transition hover:bg-[#2E5628]"
                             >
                                 <FiPhoneCall className="text-lg" />
-                                +X-XXX-XXX-XXXX
+                                +1-800-879-0156
                             </a>
 
                             <Link
@@ -116,13 +116,13 @@ const Hero = () => {
                             </Link>
                         </div>
 
-                        <div className="mt-10 grid grid-cols-3 divide-x divide-[#CFE5C9] rounded-2xl border border-[#DDEED8] bg-white/80 p-5 shadow-sm backdrop-blur">
+                        <div className="mt-10 grid grid-cols-3 divide-x divide-[#CFE5C9] rounded-2xl border border-[#DDEED8] bg-white/80 p-5 shadow-sm backdrop-blur-sm">
                             {stats.map((stat) => (
                                 <div key={stat.label} className="px-3 text-center">
                                     <p className="text-2xl font-black text-[#193315]">
                                         {stat.value}
                                     </p>
-                                    <p className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-gray-500">
+                                    <p className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-gray-700">
                                         {stat.label}
                                     </p>
                                 </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ProductSlider from "./ProductSlider";
 import ProductSlider2 from "./ProductSlider2";
+import Image from "next/image";
 
 const shopItems = [
     {
@@ -55,75 +56,77 @@ const OurShop = () => {
         <>
             {/* SHOP SECTION */}
             <section className="max-w-7xl mx-auto px-4 py-20">
-  
-  {/* Heading */}
-  <div className="text-center mb-16">
-    <h2 className="text-4xl md:text-6xl font-light text-gray-900 tracking-tight">
-      Explore <span className="font-semibold text-[#457C3C]">More</span>
-    </h2>
 
-    <div className="flex justify-center items-center gap-2 mt-5">
-      <span className="w-12 h-[3px] bg-[#457C3C] rounded-full"></span>
-      <span className="w-3 h-3 bg-[#457C3C] rounded-full"></span>
-      <span className="w-12 h-[3px] bg-[#457C3C] rounded-full"></span>
-    </div>
-  </div>
+                {/* Heading */}
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-6xl font-light text-gray-900 tracking-tight">
+                        Explore <span className="font-semibold text-[#457C3C]">More</span>
+                    </h2>
 
-  {/* Cards */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-    
-    {shopItems.map((item, index) => (
-      <div
-        key={index}
-        className="group relative overflow-hidden rounded-[32px] bg-white shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] transition-all duration-500"
-      >
+                    <div className="flex justify-center items-center gap-2 mt-5">
+                        <span className="w-12 h-[3px] bg-[#457C3C] rounded-full"></span>
+                        <span className="w-3 h-3 bg-[#457C3C] rounded-full"></span>
+                        <span className="w-12 h-[3px] bg-[#457C3C] rounded-full"></span>
+                    </div>
+                </div>
 
-        {/* Background Glow */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#457C3C]/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                {/* Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        <div className="relative flex flex-col md:flex-row h-full">
+                    {shopItems.map((item, index) => (
+                        <div
+                            key={index}
+                            className="group relative overflow-hidden rounded-[32px] bg-white shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] transition-all duration-500"
+                        >
 
-          {/* Image */}
-          <div className="md:w-[48%] h-[260px] md:h-auto overflow-hidden">
-            <img
-              src={item.image}
-              alt={item.alt}
-              className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
-            />
-          </div>
+                            {/* Background Glow */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#457C3C]/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
-          {/* Content */}
-          <div className="md:w-[52%] relative flex flex-col justify-center p-8 lg:p-10 bg-white">
+                            <div className="relative flex flex-col md:flex-row h-full">
 
-            {/* Top Badge */}
-            {/* <span className="absolute top-6 right-6 text-[11px] tracking-[3px] uppercase text-[#457C3C] font-semibold">
-              Collection
-            </span> */}
+                                {/* Image */}
+                                <div className="md:w-[48%] h-[260px] md:h-auto overflow-hidden relative">
+                                    <Image
+                                        src={item.image}
+                                        alt={item.alt}
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        className="object-cover group-hover:scale-110 transition duration-700"
+                                    />
+                                </div>
 
-            {/* Title */}
-            <h3 className="text-2xl lg:text-xl font-semibold text-gray-900 leading-tight">
-              {item.title}
-            </h3>
+                                {/* Content */}
+                                <div className="md:w-[52%] relative flex flex-col justify-center p-8 lg:p-10 bg-white">
 
-            {/* Subtitle */}
-            <p className="mt-4 text-gray-600 text-sm leading-relaxed">
-              {item.subtitle}
-            </p>
+                                    {/* Top Badge */}
+                                    {/* <span className="absolute top-6 right-6 text-[11px] tracking-[3px] uppercase text-[#457C3C] font-semibold">
+                                    Collection
+                                     </span> */}
 
-            {/* Button */}
-            <Link href={item.link}>
-              <button className="mt-8 w-fit px-7 py-3 rounded-full bg-[#457C3C] text-white font-medium tracking-wide hover:bg-[#193315] hover:scale-105 transition duration-300">
-                See More
-              </button>
-            </Link>
+                                    {/* Title */}
+                                    <h3 className="text-2xl lg:text-xl font-semibold text-gray-900 leading-tight">
+                                        {item.title}
+                                    </h3>
 
-          </div>
-        </div>
-      </div>
-    ))}
+                                    {/* Subtitle */}
+                                    <p className="mt-4 text-gray-600 text-sm leading-relaxed">
+                                        {item.subtitle}
+                                    </p>
 
-  </div>
-</section>
+                                    {/* Button */}
+                                    <Link href={item.link}>
+                                        <button className="mt-8 w-fit px-7 py-3 rounded-full bg-[#457C3C] text-white font-medium tracking-wide hover:bg-[#193315] hover:scale-105 transition duration-300">
+                                            See More
+                                        </button>
+                                    </Link>
+
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+
+                </div>
+            </section>
 
             {/* ABOUT SECTION */}
             <section className="py-14 lg:py-20">
@@ -190,10 +193,11 @@ const OurShop = () => {
 
                                     {/* ICON */}
                                     <div className="w-16 h-16 p-3 border rounded-full border-[#348d27] flex items-center justify-center shrink-0">
-                                        <img
-                                            src="/icon2.png"
+                                        <Image
+                                            src="/icon2.webp"
                                             alt={card.title}
-                                            className="w-full h-full object-contain"
+                                            width={40}
+                                            height={40}
                                         />
                                     </div>
 

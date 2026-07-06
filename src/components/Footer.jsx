@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   FaFacebookF,
   FaTwitter,
@@ -23,19 +24,21 @@ const Footer = () => {
 
             {/* LOGO */}
             <div className="mb-6 flex items-center gap-3">
-              <img
+              <Image
                 src="/Logo.jpg"
                 alt="HowToContact Logo"
+                width={48}
+                height={48}
+                priority
                 className="h-12 w-auto"
               />
-
-              <h2 className="text-3xl font-medium text-gray-900">
+              <p className="text-3xl font-medium text-gray-900">
                 HowToContact
-              </h2>
+              </p>
             </div>
 
             {/* ABOUT */}
-            <p className="mb-8 max-w-md text-sm leading-relaxed text-gray-500">
+            <p className="mb-8 max-w-md text-sm leading-relaxed text-gray-700">
               We are an experienced information technology consulting
               service provider. We offer uninterrupted IT solutions to
               all types of businesses. Contact us for further information.
@@ -53,7 +56,7 @@ const Footer = () => {
                     Address
                   </h6>
 
-                  <p className="text-sm leading-relaxed text-gray-500">
+                  <p className="text-sm leading-relaxed text-gray-700">
                     12031 NE 102 St, Kirkland,
                     <br />
                     Washington, USA
@@ -72,7 +75,7 @@ const Footer = () => {
 
                   <a
                     href="mailto:info@howtocontact.live"
-                    className="text-sm text-gray-500 transition hover:text-[#193315]"
+                    className="text-sm text-gray-700 transition hover:text-[#193315]"
                   >
                     info@howtocontact.live
                   </a>
@@ -82,7 +85,7 @@ const Footer = () => {
 
             {/* SOCIAL */}
             <div className="mt-8">
-              <span className="mb-4 block text-xs font-semibold uppercase tracking-wider text-gray-400">
+              <span className="mb-4 block text-xs font-semibold uppercase tracking-wider text-gray-600">
                 Connect With Us
               </span>
 
@@ -91,21 +94,24 @@ const Footer = () => {
                   {
                     icon: <FaFacebookF />,
                     url: "https://www.facebook.com/",
+                    label: "Facebook",
+                    
+                    
                   },
-
                   {
                     icon: <FaTwitter />,
                     url: "https://www.x.com/",
+                    label: "Twitter",
                   },
-
                   {
                     icon: <FaLinkedinIn />,
                     url: "https://www.linkedin.com/",
+                    label: "LinkedIn",
                   },
-
                   {
                     icon: <FaYoutube />,
                     url: "https://www.youtube.com/",
+                    label: "YouTube",
                   },
                 ].map((social, idx) => (
                   <a
@@ -113,6 +119,8 @@ const Footer = () => {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`Visit our ${social.label} page`}
+                    title={social.label}
                     className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-all duration-300 hover:bg-[#193315] hover:text-white"
                   >
                     {social.icon}
@@ -130,11 +138,11 @@ const Footer = () => {
               {/* USEFUL LINKS */}
               <div className="flex flex-col">
 
-                <h4 className="relative mb-7 inline-block pb-3 text-xl font-semibold text-[#071405] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-14 after:bg-[#2E5628]">
+                <h3 className="relative mb-7 inline-block pb-3 text-xl font-semibold text-[#071405] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-14 after:bg-[#2E5628]">
                   Useful Links
-                </h4>
+                </h3>
 
-                <ul className="space-y-4 text-[15px] text-gray-500">
+                <ul className="space-y-4 text-[15px] text-gray-700">
                   {[
                     {
                       name: "Home",
@@ -188,11 +196,11 @@ const Footer = () => {
               {/* POPULAR SERVICES */}
               <div className="flex flex-col">
 
-                <h4 className="relative mb-7 inline-block pb-3 text-xl font-semibold text-[#071405] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-14 after:bg-[#2E5628]">
+                <h3 className="relative mb-7 inline-block pb-3 text-xl font-semibold text-[#071405] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-14 after:bg-[#2E5628]">
                   Popular Services
-                </h4>
+                </h3>
 
-                <ul className="space-y-4 text-[15px] text-gray-500">
+                <ul className="space-y-4 text-[15px] text-gray-700">
                   {[
                     {
                       name: "Printer Solution",
@@ -240,7 +248,7 @@ const Footer = () => {
         <div className="mt-14 border-t border-gray-200 pt-6">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
 
-            <p className="text-center text-sm text-gray-400 md:text-left">
+            <p className="text-center text-sm text-gray-600 md:text-left">
               © 2026 HowToContact. All Rights Reserved.
             </p>
 
