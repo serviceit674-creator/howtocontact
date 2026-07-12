@@ -120,7 +120,7 @@ const Navbar = () => {
                     <ul className="absolute left-full top-0 hidden group-hover/solitaire:block bg-white shadow-xl rounded-xl w-64 py-2 z-50 ml-0.5">
                       <li>
                         <Link
-                          href="/services/solitaire/solitaire-login"
+                          href="/services/solitaire/solitaire-login-issues"
                           className="block px-5 py-3 hover:bg-gray-100"
                         >
                           Account & Login Issues
@@ -316,7 +316,7 @@ const Navbar = () => {
                       <ul className="ml-2 mt-2 flex flex-col gap-2 text-gray-600">
                         <li>
                           <Link
-                            href="/services/solitaire/solitaire-login"
+                            href="/services/solitaire/solitaire-login-issues"
                             onClick={() => {
                               setMobileOpen(false);
                               setServiceOpen(false);

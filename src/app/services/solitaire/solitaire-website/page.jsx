@@ -1,19 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
-import { 
-  Globe, Smartphone, Zap, Download, Monitor, ShoppingCart, 
-  Search, Image, AlertCircle, HelpCircle, CheckCircle2, ArrowRight 
+import {
+  Globe, Smartphone, Zap, Download, Monitor, ShoppingCart,
+  Search, Image, AlertCircle, HelpCircle, CheckCircle2, ArrowRight
 } from 'lucide-react';
 
 export const metadata = {
-  
+
   title: 'Solitaire Website & App Issues | Loading, Checkout & Technical Help',
   description: 'Facing Solitaire website or app problems? Get solutions for website loading, app crashes, update issues, checkout errors, search problems, and more.',
   alternates: {
     canonical: 'https://www.howtocontact.live/solitaire-website-app-issues',
   },
-     openGraph: {
-    title:"Solitaire Website & App Issues| Call +1-800-879-0156",
+  openGraph: {
+    title: "Solitaire Website & App Issues| Call +1-800-879-0156",
 
     description:
       "Facing Solitaire website or app problems? Get solutions for website loading, app crashes, update issues, checkout errors, call +1-800-879-0156 and search problems, and more.",
@@ -34,7 +34,7 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-  
+
 };
 
 export default function SolitaireWebsiteAppIssues() {
@@ -175,14 +175,14 @@ export default function SolitaireWebsiteAppIssues() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
+
           {/* 3.1 Web Engine Architecture Column (Left Pane) */}
           <div className="lg:col-span-7 space-y-8">
             <div className="border-b border-slate-200 pb-4 flex items-center gap-3">
               <div className="p-2 bg-emerald-50 rounded-lg"><Globe className="w-5 h-5 text-emerald-700" /></div>
               <h3 className="text-2xl font-black text-slate-950 tracking-tight">Website Engine Resolution Logs</h3>
             </div>
-            
+
             <div className="space-y-6">
               {websiteIssues.map((item, idx) => (
                 <article key={idx} className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition duration-300">
@@ -195,7 +195,7 @@ export default function SolitaireWebsiteAppIssues() {
                         <h4 className="text-lg font-bold text-slate-950">{item.title}</h4>
                         <p className="text-slate-500 text-xs mt-0.5">{item.description}</p>
                       </div>
-                      
+
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
                         <div className="space-y-2">
                           <span className="font-bold text-emerald-900 tracking-wider uppercase block">Root Diagnostics:</span>
@@ -235,7 +235,7 @@ export default function SolitaireWebsiteAppIssues() {
                       <h4 className="text-lg font-bold text-slate-950">{item.title}</h4>
                     </div>
                     <p className="text-slate-600 text-xs leading-relaxed">{item.description}</p>
-                    
+
                     <div className="space-y-3 pt-2">
                       <span className="text-xs font-bold text-emerald-950 tracking-wider uppercase block">Application Fix Array:</span>
                       <div className="space-y-2">
@@ -291,7 +291,7 @@ export default function SolitaireWebsiteAppIssues() {
           {faqs.map((faq, idx) => (
             <article key={idx} className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:border-emerald-200 transition-colors">
               <h3 className="text-lg font-bold text-slate-950 flex gap-4 items-start">
-                <HelpCircle className="w-6 h-6 text-emerald-600 shrink-0 mt-0.5" /> 
+                <HelpCircle className="w-6 h-6 text-emerald-600 shrink-0 mt-0.5" />
                 <span>{faq.q}</span>
               </h3>
               <p className="text-base text-slate-600 mt-3 pl-10 border-l-2 border-emerald-500/30 leading-relaxed">
@@ -312,7 +312,9 @@ export default function SolitaireWebsiteAppIssues() {
             </p>
           </div>
           <div className="relative z-10 shrink-0">
-            <Link href="/contact">
+            <Link href="/contact"
+              target="_blank"
+              rel="noopener noreferrer">
               <span className="inline-flex bg-white text-[#0c2e16] hover:bg-emerald-50 px-10 py-4 rounded-xl font-extrabold text-sm shadow-2xl transition transform hover:-translate-y-1 active:translate-y-0 group cursor-pointer items-center">
                 Access Support Desk <ArrowRight className="inline-block w-4 h-4 ml-2 text-emerald-600 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -322,7 +324,7 @@ export default function SolitaireWebsiteAppIssues() {
         </div>
       </div>
 
-     
+
 
     </div>
   );

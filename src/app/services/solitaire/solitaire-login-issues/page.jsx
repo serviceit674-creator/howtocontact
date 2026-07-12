@@ -1,7 +1,7 @@
 import React from 'react';
-import { 
-  Lock, LogIn, Key, ShieldAlert, MessageSquare, Mail, 
-  Phone, UserCheck, UserX, UserPlus, Copy, ArrowRight, CheckCircle2 
+import {
+  Lock, LogIn, Key, ShieldAlert, MessageSquare, Mail,
+  Phone, UserCheck, UserX, UserPlus, Copy, ArrowRight, CheckCircle2
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -9,20 +9,20 @@ export const metadata = {
   title: 'Solitaire Account & Login Issues | Login, Password & Verification Help',
   description: 'Facing Solitaire account login problems? Get solutions for Solitaire unable to login, forgot password, OTP, verification, account activation, and profile issues.',
 
-    images: [
-      {
-        url: "https://www.howtocontact.live/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Browser Solution Services",
-      },
-    ],
+  images: [
+    {
+      url: "https://www.howtocontact.live/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Browser Solution Services",
+    },
+  ],
 
-    
+
   twitter: {
     card: "summary_large_image",
 
-    title:"Solitaire Account & Login Issues | Call +1-800-879-0156",
+    title: "Solitaire Account & Login Issues | Call +1-800-879-0156",
 
     description:
       "Get fast, reliable Browser Solutions help from experts. Call +1-800-879-0156 for troubleshooting, software fixes, and technical support worldwide.",
@@ -30,8 +30,8 @@ export const metadata = {
     images: ["/og-image.jpg"],
   },
 
-    openGraph: {
-    title:"Solitaire Account & Login Issues | Call +1-800-879-0156",
+  openGraph: {
+    title: "Solitaire Account & Login Issues | Call +1-800-879-0156",
 
     description:
       "Get fast, reliable Browser Solutions help from experts. Call +1-800-879-0156 for troubleshooting, software fixes, and technical support worldwide.",
@@ -167,9 +167,12 @@ export default function SolitaireAccountLoginIssues() {
               </div>
               <h3 className="text-xl font-bold mb-2">Need Direct Help?</h3>
               <p className="text-sm text-slate-400 mb-6">If your issue is not resolved by following the manual steps, connect instantly with our secure backend support team.</p>
-              <button className="w-full bg-emerald-500 text-white font-bold py-3 px-4 rounded-xl hover:bg-emerald-600 transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/50">
-                Get Instant Resolution <ArrowRight className="w-4 h-4" />
-              </button>
+              <Link href="/contact" target="_blank" rel="noopener noreferrer">
+
+                <button className="w-full bg-emerald-500 text-white font-bold py-3 px-4 rounded-xl hover:bg-emerald-600 transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/50">
+                  Get Instant Resolution <ArrowRight className="w-4 h-4" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -195,7 +198,7 @@ export default function SolitaireAccountLoginIssues() {
             <div key={index} className="group bg-[#f4faf6] border border-emerald-100 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:border-emerald-300 flex flex-col justify-between relative overflow-hidden">
               {/* Corner accent to mimic image curvature styling */}
               <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-emerald-100/50 to-transparent rounded-bl-full pointer-events-none"></div>
-              
+
               <div>
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-white rounded-xl shadow-md flex items-center justify-center border border-emerald-500/10 group-hover:scale-110 transition-transform">
@@ -292,20 +295,22 @@ export default function SolitaireAccountLoginIssues() {
               Contact the Solitaire Support Team for secure and reliable backend authentication assistance. Our team is available 24/7 to help you regain access and manage your profile smoothly.
             </p>
           </div>
-           <Link href='/contact'>
           <div className="relative z-10 shrink-0">
-           
-            <button className="bg-[#0c2e16] text-white hover:bg-[#144723] px-8 py-4 rounded-xl font-bold text-sm shadow-xl transition transform hover:-translate-y-0.5">
-              Contact Support Agent
-            </button>
-         
+            <Link
+              href="/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-[#0c2e16] text-white hover:bg-[#144723] px-8 py-4 rounded-xl font-bold text-sm shadow-xl transition transform hover:-translate-y-0.5">
+                Contact Support Agent
+              </button>
+            </Link>
           </div>
-             </Link>
           <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
         </div>
       </div>
 
-     
+
 
     </div>
   );

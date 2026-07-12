@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { 
-  Cpu, ToggleLeft, Database, RefreshCcw, Link2, Code, 
-  CloudOff, ShieldAlert, HelpCircle, ArrowRight, CheckCircle2, Terminal, ChevronRight 
+import {
+  Cpu, ToggleLeft, Database, RefreshCcw, Link2, Code,
+  CloudOff, ShieldAlert, HelpCircle, ArrowRight, CheckCircle2, Terminal, ChevronRight
 } from 'lucide-react';
 
 export const metadata = {
@@ -11,8 +11,8 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.howtocontact.live/solitaire-technical-support-issues',
   },
-    openGraph: {
-    title:"Solitaire Technical Support Issues | Call +1-800-879-0156",
+  openGraph: {
+    title: "Solitaire Technical Support Issues | Call +1-800-879-0156",
 
     description:
       "Resolve Solitaire technical issues including system errors, feature problems, data missing, sync issues, API errors, downtime, call +1-800-879-0156 and security concerns.",
@@ -125,7 +125,7 @@ export default function SolitaireTechnicalSupportIssues() {
 
   return (
     <div className="bg-slate-50 min-h-screen text-slate-800 font-sans antialiased scroll-smooth">
-      
+
 
 
       {/* 2. Premium Hero Area */}
@@ -149,14 +149,14 @@ export default function SolitaireTechnicalSupportIssues() {
       {/* 3. Sidebar Navigational Dashboard Layout Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20" aria-label="Resolution Panel Hub">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-          
+
           {/* 3.1 Sticky Left Navigation Menu Panel */}
           <nav className="hidden lg:block lg:col-span-4 bg-white border border-slate-100 rounded-2xl p-4 sticky top-28 shadow-sm">
             <span className="text-xs font-bold text-slate-400 uppercase tracking-widest px-3 block mb-4">Select Tech Node</span>
             <div className="space-y-1">
               {technicalProblems.map((problem) => (
-                <a 
-                  key={problem.id} 
+                <a
+                  key={problem.id}
                   href={`#${problem.id}`}
                   className="flex items-center justify-between p-3 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-emerald-700 transition group"
                 >
@@ -173,12 +173,11 @@ export default function SolitaireTechnicalSupportIssues() {
           {/* 3.2 Main Content Stream Cards */}
           <div className="col-span-1 lg:col-span-8 space-y-12">
             {technicalProblems.map((item) => (
-              <article 
-                key={item.id} 
-                id={item.id} 
-                className={`bg-white border rounded-3xl p-8 shadow-sm hover:shadow-md transition duration-300 scroll-mt-28 ${
-                  item.isCritical ? 'border-rose-200/80 bg-gradient-to-b from-white to-rose-50/10' : 'border-slate-100'
-                }`}
+              <article
+                key={item.id}
+                id={item.id}
+                className={`bg-white border rounded-3xl p-8 shadow-sm hover:shadow-md transition duration-300 scroll-mt-28 ${item.isCritical ? 'border-rose-200/80 bg-gradient-to-b from-white to-rose-50/10' : 'border-slate-100'
+                  }`}
               >
                 <div className="flex items-start justify-between gap-4 border-b border-slate-100 pb-5 mb-6">
                   <div className="flex items-start gap-4">
@@ -190,9 +189,9 @@ export default function SolitaireTechnicalSupportIssues() {
                       <p className="text-slate-500 text-xs md:text-sm mt-0.5">{item.description}</p>
                     </div>
                   </div>
-                  <span className={`text-[10px] font-mono font-bold tracking-widest uppercase px-2 py-0.5 rounded ${item.isCritical ? 'bg-rose-100 text-rose-800' : 'bg-slate-100 text-slate-600'}`}>
+                  {/* <span className={`text-[10px] font-mono font-bold tracking-widest uppercase px-2 py-0.5 rounded ${item.isCritical ? 'bg-rose-100 text-rose-800' : 'bg-slate-100 text-slate-600'}`}>
                     {item.isCritical ? "CRITICAL_LOG" : "SYS_LOG"}
-                  </span>
+                  </span> */}
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -261,7 +260,7 @@ export default function SolitaireTechnicalSupportIssues() {
           {faqs.map((faq, idx) => (
             <div key={idx} className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:border-emerald-100 transition-all">
               <h3 className="text-base sm:text-lg font-bold text-slate-950 flex gap-4 items-start">
-                <HelpCircle className="w-5 h-5 text-emerald-600 shrink-0 mt-1" /> 
+                <HelpCircle className="w-5 h-5 text-emerald-600 shrink-0 mt-1" />
                 <span>{faq.q}</span>
               </h3>
               <p className="text-sm sm:text-base text-slate-600 mt-3 pl-9 border-l border-slate-200 leading-relaxed">
@@ -282,7 +281,9 @@ export default function SolitaireTechnicalSupportIssues() {
             </p>
           </div>
           <div className="relative z-10 shrink-0">
-            <Link href="/contact">
+            <Link href="/contact"
+              target="_blank"
+              rel="noopener noreferrer">
               <span className="inline-flex bg-white text-[#0c2e16] hover:bg-emerald-50 px-10 py-4 rounded-xl font-extrabold text-sm shadow-2xl transition transform hover:-translate-y-1 active:translate-y-0 group cursor-pointer items-center">
                 Access Support Desk <ArrowRight className="inline-block w-4 h-4 ml-2 text-emerald-600 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -292,7 +293,7 @@ export default function SolitaireTechnicalSupportIssues() {
         </div>
       </div>
 
-  
+
 
     </div>
   );

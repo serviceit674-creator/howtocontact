@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { 
-  CreditCard, Wallet, Banknote, AlertTriangle, RefreshCw, 
-  HelpCircle, Receipt, Landmark, CheckCircle2, ShieldCheck, ArrowRight 
+import {
+  CreditCard, Wallet, Banknote, AlertTriangle, RefreshCw,
+  HelpCircle, Receipt, Landmark, CheckCircle2, ShieldCheck, ArrowRight
 } from 'lucide-react';
 
 export const metadata = {
@@ -12,7 +12,7 @@ export const metadata = {
     canonical: 'https://www.howtocontact.live/solitaire-payment',
   },
   openGraph: {
-    title:"Solitaire Payment Issues  | Call +1-800-879-0156",
+    title: "Solitaire Payment Issues  | Call +1-800-879-0156",
 
     description:
       "Facing Solitaire payment problems? Find solutions for payment failed, refund issues, gateway errors, card, UPI, wallet payments, and billing concerns.",
@@ -33,7 +33,7 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-  
+
 };
 
 export default function SolitairePaymentIssuesNew() {
@@ -126,8 +126,8 @@ export default function SolitairePaymentIssuesNew() {
 
   return (
     <div className="bg-slate-50 min-h-screen text-slate-800 font-sans">
-      
- 
+
+
 
       {/* 2. Brand Hero Segment */}
       <div className="relative overflow-hidden bg-gradient-to-br from-[#0c2e16] to-emerald-950 text-white py-24 md:py-32 border-b-8 border-emerald-500">
@@ -164,7 +164,7 @@ export default function SolitairePaymentIssuesNew() {
                   {item.icon}
                 </div>
               </div>
-              
+
               <div className="flex-1 space-y-6 w-full">
                 <div>
                   <h3 className="text-2xl md:text-3xl font-extrabold text-slate-950 group-hover:text-emerald-800 transition">{item.title}</h3>
@@ -251,7 +251,7 @@ export default function SolitairePaymentIssuesNew() {
           {faqs.map((faq, idx) => (
             <div key={idx} className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:border-emerald-200 transition-colors">
               <h3 className="text-lg font-bold text-slate-950 flex gap-4 items-start">
-                <HelpCircle className="w-6 h-6 text-emerald-600 shrink-0 mt-0.5" /> 
+                <HelpCircle className="w-6 h-6 text-emerald-600 shrink-0 mt-0.5" />
                 <span>{faq.q}</span>
               </h3>
               <p className="text-base text-slate-600 mt-3 pl-10 border-l-2 border-emerald-500/30 leading-relaxed">
@@ -272,7 +272,9 @@ export default function SolitairePaymentIssuesNew() {
             </p>
           </div>
           <div className="relative z-10 shrink-0">
-            <Link href="/contact">
+            <Link href="/contact"
+              target="_blank"
+              rel="noopener noreferrer">
               <span className="inline-flex bg-white text-[#0c2e16] hover:bg-emerald-50 px-10 py-4 rounded-xl font-extrabold text-sm shadow-2xl transition transform hover:-translate-y-1 active:translate-y-0 group cursor-pointer items-center">
                 Access Support Desk <ArrowRight className="inline-block w-4 h-4 ml-2 text-emerald-600 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -282,7 +284,7 @@ export default function SolitairePaymentIssuesNew() {
         </div>
       </div>
 
-    
+
 
     </div>
   );
