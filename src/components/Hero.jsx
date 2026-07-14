@@ -15,6 +15,7 @@ const stats = [
 
 const Hero = () => {
     return (
+        // ------main section-----
         <section className="relative isolate overflow-hidden bg-[#F4F8F2]">
             <div className="absolute inset-0 -z-10 bg-[#F4F8F2]" />
 
@@ -75,17 +76,14 @@ const Hero = () => {
                             <span className="h-2 w-2 rounded-full bg-[#76CE68]" />
                             Global IT & Digital Solutions
                         </p>
-
                         <h1 className="text-4xl font-black leading-[1.05] text-[#071405] sm:text-5xl lg:text-5xl">
-                            How to SRK for reliable tech support that scales.
+                            How to Contact for reliable tech support that scales.
                         </h1>
-
                         <p className="mt-6 text-base leading-8 text-gray-600 sm:text-lg">
                             One partner for IT support, software, printing, and digital
                             growth. We deliver secure, responsive, and scalable solutions for
                             individuals, startups, and enterprises worldwide.
                         </p>
-
                         <div className="mt-8 grid gap-3 sm:grid-cols-3">
                             {trustPoints.map((item) => (
                                 <div
