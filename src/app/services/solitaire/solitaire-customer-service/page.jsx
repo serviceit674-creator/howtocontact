@@ -229,7 +229,7 @@ export default function SolitaireCustomerServiceIssues() {
         </div>
       </section>
 
-      {/* 5. Clean Modernized Structural FAQ Modules */}
+      {/* 5. Cleannnn Modernized Structural FAQ Modules */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24" aria-label="FAQ Summary">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-slate-950 tracking-tighter">Frequently Asked Questions</h2>
