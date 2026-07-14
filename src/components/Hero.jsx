@@ -77,7 +77,7 @@ const Hero = () => {
                         </p>
 
                         <h1 className="text-4xl font-black leading-[1.05] text-[#071405] sm:text-5xl lg:text-5xl">
-                            How to Contact for reliable tech support that scales.
+                            How to SRK for reliable tech support that scales.
                         </h1>
 
                         <p className="mt-6 text-base leading-8 text-gray-600 sm:text-lg">
